@@ -5,7 +5,7 @@ public class Ejercicio_8 {
 	public static void main(String[] args) {
 		/**
 		 * distancia geodesica
-		 * me gano esta, no estoy seguro que sea así >.<'
+		 * creo que ahora esta correcto
 		 */
 
 		double[] coor1 = {-33.13960018722044, -70.07519971686143};
@@ -13,13 +13,16 @@ public class Ejercicio_8 {
 		double radio = 6378.137;
 		
 
-		double restalons = gradtorad(coor1[1]) - gradtorad(coor2[1]);
-		double sumalats = gradtorad(coor1[0]) + gradtorad(coor2[0]);
 		double restalats = gradtorad(coor1[0]) - gradtorad(coor2[0]);
+		double restalons = gradtorad(coor1[1]) - gradtorad(coor2[1]);
 		
-		double cosSumaLats = Math.cos(sumalats/2);
+		double sumalats = gradtorad(coor1[0]) + gradtorad(coor2[0]);
+		double cosSumaLats = Math.cos(sumalats/2.0);
+		
+		System.out.println(restalats);
+		
 		double resultado = radio * Math.sqrt(
-					(restalons*Math.pow(cosSumaLats, 2))+restalats
+					(Math.pow(restalons*cosSumaLats, 2))+Math.pow(restalats,2)
 				);
 		
 		System.out.println("distancia: "+ resultado);
