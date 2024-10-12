@@ -23,4 +23,30 @@ public class Ejercicio_2 {
 		
 	}
 
+	/**
+	 * calcula area de un circulo en base a un radio
+	 * @param radio
+	 * @return
+	 */
+	public static double areaCirculo(double radio) {
+		final double  pi = Math.PI;
+		
+		double area = Math.round( pi * (Math.pow(radio, 2)));
+		
+		return area;
+	}
+
+	/**
+	 * caclula perimetro de un circulo en base a un radio
+	 * @param radio
+	 * @return
+	 */
+	public static double perimetroCirculo(double radio) {
+		final double  pi = Math.PI;
+		
+		double perimetro = Math.round( pi * (radio * 2));
+		
+		return perimetro;
+	}
+
 }

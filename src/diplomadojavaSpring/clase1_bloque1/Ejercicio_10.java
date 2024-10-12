@@ -18,5 +18,16 @@ public class Ejercicio_10 {
 		
 
 	}
+	
+	/**
+	 * CALCULA ENERGIA CINETICA DE UNA MASA EN BASE A SU VELOCIDAD
+	 * @param masa
+	 * @param velocidad
+	 * @return
+	 */
+	public static double calculaEnergiaCinetica(float masa, float velocidad) {
+		double energia = 0.5 * masa * velocidad;
+		return energia;
+	}
 
 }

@@ -14,5 +14,14 @@ public class Ejercicio_6 {
 		System.out.println(celcius + "celcius en farenheit es: " +far);
 		
 	}
+	
+	/**
+	 * convierte grados celcius a fareheit
+	 * @param celcius
+	 * @return
+	 */
+	public static double convierteCaF(double celcius) {
+		return (celcius * 1.8)+32;
+	}
 
 }

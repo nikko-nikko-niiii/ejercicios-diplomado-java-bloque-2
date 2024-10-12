@@ -39,4 +39,44 @@ public class Ejercicio_4 {
 		
 		
 	}
+	
+	
+	
+	/**
+	 * calcula promedio aritmetico de valores ingresados en arreglo
+	 * @param valores
+	 * @return
+	 */
+	public static double promedioAritmetico(int[] valores) {
+
+		double promedioAritmetico = 0;
+		
+		for(int i = 0; i<valores.length; i++) {
+			promedioAritmetico += valores[i];  
+		}
+		promedioAritmetico /=valores.length;
+
+		return promedioAritmetico;
+		
+	}
+	
+	/**
+	 * calcula promedio armonico de valores ingresados en arreglo
+	 * @param valores
+	 * @return
+	 */
+	public static double promedioArmonico(int[] valores) {
+
+		double promedioArmonico = 0;
+		
+		//armonico
+		for(int i = 0; i<valores.length; i++) {
+			double mientras = valores[i];
+			promedioArmonico +=  1/mientras;
+		}
+		promedioArmonico =valores.length/promedioArmonico;
+
+		return promedioArmonico;
+
+	}
 }

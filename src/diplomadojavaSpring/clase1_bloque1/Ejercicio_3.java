@@ -35,4 +35,34 @@ public class Ejercicio_3 {
 		
 	}
 
+	/**
+	 * calcula area de cilindro usando alto y radio
+	 * @param alto
+	 * @param radio
+	 * @return
+	 */
+	public static double areaCilinro(double alto, double radio) {
+		
+		final double  pi = Math.PI;
+		
+		double areaTotal = (2 * pi * radio * alto) + (2* pi * Math.pow(alto, 2));
+		return areaTotal;
+
+	}
+	
+	/**
+	 * calcula volumend e cilindro usando alto y radio
+	 * @param alto
+	 * @param radio
+	 * @return
+	 */
+	public static double volumenCilinro(double alto, double radio) {
+		
+		final double  pi = Math.PI;
+		
+		double volumen = (pi * Math.pow(radio, 2)) * alto;
+		
+		return volumen;
+	}
+
 }

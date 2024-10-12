@@ -20,5 +20,25 @@ public class Ejercicio_7 {
 		
 
 	}
+	
+	
+	/**
+	 * calcula distancia euclidianda entre 2 puntos de coordenadas
+	 * @param lat1
+	 * @param lon1
+	 * @param lat2
+	 * @param lon2
+	 * @return
+	 */
+	public static double calculaDistanciaEuclidiana(double lat1, double lon1, double lat2, double lon2) {
+
+		double distancia = Math.sqrt(
+					Math.pow(lat1-lat2, 2) 
+					+ 
+					Math.pow(lon1-lon2, 2)
+				);
+		
+		return distancia;
+	}
 
 }
